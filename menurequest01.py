@@ -22,7 +22,6 @@ def index():
         username = session["username"]
         URL = "http://127.0.0.1:3000/"
         menu = requests.get(URL).json()
-        # return render_template("test.html", name=username, menu=menu, date=date.today())
         return render_template("menu.html", name=username, menu=menu, date=date.today())
 
     return render_template("splash.html")
