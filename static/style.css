@@ -1,0 +1,78 @@
+h2 {
+  color: rgb(245, 193, 96);
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 15px;
+  margin-bottom: 65px;
+}
+
+ul,li {
+  color: #101010;
+  margin-top: 4px;
+  align-items: center;
+  text-align: center;
+  list-style-type: none;
+}
+
+h5 {
+  color: #eda707;
+}
+
+h3 {
+  text-align: center;
+  align-items: center;
+  background-color: #6a5862e3;
+  color: #f9faff;
+  
+}
+
+body {
+  background-position: center;
+  background-position-y: top;
+  background-image: url("https://64.media.tumblr.com/ee5169a677d71323105a5210404f474d/tumblr_ptp22tbWHk1tgo74ho1_1280.gifv");
+  background-color: #0e2638;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.card1 {
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  padding: 25px;
+  border-spacing: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #6a586200;
+  border-color: #f50c0c00;
+  border-width: 10px;
+  justify-content: center;
+}
+.card2 {
+  align-items: center;
+  text-align: center;
+  /* margin-top: 20px; */
+  margin-bottom: auto;
+  padding: 25px;
+  border-spacing: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #6a5862e3;
+  color: rgba(255, 255, 255, 0.541);
+  border-color: #10101000;
+  border-width: 10px;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: #6a5862;
+}
+
+.btn {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(0, 128, 0, 0.72);
+  color: black;
+  align-items: center;
+}

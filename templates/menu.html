@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+    <title>Menu</title>
+<body>
+      <nav class="navbar navbar-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" style="color:white;" href="https://www.doordash.com/">H 🍔🍣 N G R Y ?</a>
+      
+       <div class="navbar-brand">
+            <h5>{{name}} <span style="color:black">|</span> <a href='/logout'>Logout </a></h5>
+      </div>
+    </div>
+      </nav>
+    <div class="container">
+        
+            <div class="card1"> 
+                <h3>Today's Menu</h3>
+                <p style="margin-top: 20px; color:white"><strong>{{date}}</strong></p>
+            </div>
+      
+       
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+        <div class="card2">
+            <h5>Appetizers</h5>
+            {% for item in menu[0]['appetizers'] %}
+            <li>{{item['name']}}    ${{item['price']}}</li>
+            {% endfor %}
+        </div>
+        <div class="card2">
+            <h5>Main Dish</h5>
+            {% for item in menu[1]['main'] %}
+            <li>{{item['name']}}    ${{item['price']}}</li>
+            {% endfor %}
+        </div>
+        <div class="card2">
+            <h5>Drinks</h5>
+            {% for item in menu[2]['drinks'] %}
+            <li>{{item['name']}}    ${{item['price']}}</li>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</body>
+</html>
