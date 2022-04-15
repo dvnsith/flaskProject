@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 import requests
-from pprint import pprint
 from flask import Flask
 from flask import session
 from flask import render_template
 from flask import redirect
 from flask import url_for
-from flask import escape
 from flask import request
 from datetime import date
 
@@ -32,8 +30,6 @@ def login():
     # if you sent us a POST because you clicked the login button
     if request.method == "POST":
 
-        # request.form["xyzkey"]: use indexing if you know the key exists
-        # request.form.get("xyzkey"): use get if the key might not exist
         session["username"] = request.form.get("username")
         return redirect(url_for("index"))
 
