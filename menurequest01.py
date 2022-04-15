@@ -21,9 +21,8 @@ def index():
     if "username" in session:
         username = session["username"]
         URL = "http://127.0.0.1:3000/"
-
         menu = requests.get(URL).json()
-
+        # return render_template("test.html", name=username, menu=menu, date=date.today())
         return render_template("menu.html", name=username, menu=menu, date=date.today())
 
     return render_template("splash.html")
@@ -51,4 +50,4 @@ def logout():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=2224)
+    app.run(host="0.0.0.0", port=3000)

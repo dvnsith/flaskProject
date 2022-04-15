@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
     <title>Menu</title>
+</head>
 <body>
       <nav class="navbar navbar-light">
         <div class="container-fluid">
@@ -20,31 +20,31 @@
     </div>
       </nav>
     <div class="container">
-        
-            <div class="card1"> 
+        <div class="row">
+            <div class=" card1 col-md-3"> 
                 <h3>Today's Menu</h3>
                 <p style="margin-top: 20px; color:white"><strong>{{date}}</strong></p>
             </div>
+        </div>
       
-       
     </div>
     <div class="container-fluid">
         <div class="row">
-        <div class="card2">
+        <div class="card2 col-md-3">
             <h5>Appetizers</h5>
             {% for item in menu[0]['appetizers'] %}
             <li>{{item['name']}}    ${{item['price']}}</li>
             {% endfor %}
         </div>
-        <div class="card2">
+        <div class="card2 col-md-3">
             <h5>Main Dish</h5>
-            {% for item in menu[1]['main'] %}
+            {% for item in menu[0]['main'] %}
             <li>{{item['name']}}    ${{item['price']}}</li>
             {% endfor %}
         </div>
-        <div class="card2">
+        <div class="card2 col-md-3">
             <h5>Drinks</h5>
-            {% for item in menu[2]['drinks'] %}
+            {% for item in menu[0]['drinks'] %}
             <li>{{item['name']}}    ${{item['price']}}</li>
             {% endfor %}
         </div>

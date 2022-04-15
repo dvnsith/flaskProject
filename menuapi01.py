@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""DEMO: receiving JSON"""
 
 from flask import Flask
 from flask import request
